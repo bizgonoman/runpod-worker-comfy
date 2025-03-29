@@ -4,7 +4,6 @@ torchsde
 torchvision
 torchaudio
 einops
-hydra-core
 open_clip_torch
 transformers>=4.28.1
 tokenizers>=0.13.3
