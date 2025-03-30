@@ -20,6 +20,9 @@ RUN apt-get update && apt-get install -y \
     && ln -sf /usr/bin/python3.10 /usr/bin/python \
     && ln -sf /usr/bin/pip3 /usr/bin/pip
 
+# Install software 
+RUN apt-get install -y git
+
 # Clean up to reduce image size
 RUN apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
