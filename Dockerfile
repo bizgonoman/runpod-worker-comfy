@@ -109,6 +109,26 @@ RUN wget -O models/sam2/sam2_hiera_base_plus.pt https://huggingface.co/bizgonoma
 RUN wget -O models/sam2/sam2_hiera_large.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2_hiera_large.pt
 RUN wget -O models/vae_approx/taef1_decoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_decoder.pth
 RUN wget -O models/vae_approx/taef1_encoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_encoder.pth
+
+RUN git clone https://github.com/evanspearman/ComfyMath.git custom_nodes
+RUN git clone https://github.com/Jonseed/ComfyUI-Detail-Daemon.git custom_nodes
+RUN git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git custom_nodes
+RUN git clone https://github.com/kijai/ComfyUI-KJNodes.git custom_nodes
+RUN git clone https://github.com/neverbiasu/ComfyUI-SAM2.git custom_nodes
+RUN git clone https://github.com/JohanK66/ComfyUI-WebhookImage.git custom_nodes
+RUN git clone https://github.com/tsogzark/ComfyUI-load-image-from-url.git custom_nodes
+RUN git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus.git custom_nodes
+RUN git clone https://github.com/JPS-GER/ComfyUI_JPS-Nodes.git custom_nodes
+RUN git clone https://github.com/chflame163/ComfyUI_LayerStyle_Advance.git custom_nodes
+RUN git clone https://github.com/ssitu/ComfyUI_UltimateSDUpscale.git custom_nodes
+RUN git clone https://github.com/Ttl/ComfyUi_NNLatentUpscale.git custom_nodes
+RUN git clone https://github.com/shadowcz007/comfyui-mixlab-nodes
+RUN git clone https://github.com/Fannovel16/comfyui_controlnet_aux.git custom_nodes
+RUN git clone https://github.com/storyicon/comfyui_segment_anything.git custom_nodes
+RUN git clone https://github.com/jags111/efficiency-nodes-comfyui.git custom_nodes
+RUN git clone https://github.com/jitcoder/lora-info.git custom_nodes
+RUN git clone https://github.com/rgthree/rgthree-comfy.git custom_nodes
+RUN git clone https://github.com/WASasquatch/was-node-suite-comfyui.git custom_nodes
   
 # Stage 3: Final image
 FROM base as final
