@@ -112,7 +112,7 @@ RUN wget -O models/sam2/sam2_hiera_large.pt https://huggingface.co/bizgonoman/km
 RUN wget -O models/vae_approx/taef1_decoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_decoder.pth
 RUN wget -O models/vae_approx/taef1_encoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_encoder.pth
 
-RUN comfy node install ComfyUI-Impact-Pack
+RUN comfy node install comfyui-impact-pack
 
   
 # Stage 3: Final image
