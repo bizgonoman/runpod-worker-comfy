@@ -64,12 +64,18 @@ ARG MODEL_TYPE
 WORKDIR /comfyui
 
 # Create necessary directories
-RUN mkdir -p models/checkpoints models/vae
+RUN mkdir -p models/checkpoints models/vae models/controlnet models/embeddings
 
 # Download checkpoints/vae/LoRA to include in image based on model type
-RUN wget -O models/checkpoints/sd_xl_base_1.0.safetensors https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
-RUN wget -O models/vae/sdxl_vae.safetensors https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors
-RUN wget -O models/vae/sdxl-vae-fp16-fix.safetensors https://huggingface.co/madebyollin/sdxl-vae-fp16-fix/resolve/main/sdxl_vae.safetensors
+RUN wget -O models/checkpoints/off2onsPDXLRealistic_1a1.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/checkpoint/off2onsPDXLRealistic_1a1.safetensors
+RUN wget -O models/vae/sdxlVAE_sdxlVAE.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae/sdxlVAE_sdxlVAE.safetensors
+RUN wget -O models/vae/sdxlNaturalSkintone_fp32.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae/sdxlNaturalSkintone_fp32.safetensors
+RUN wget -O models/controlnet/control-lora-openposeXL2-rank256.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/controlnet/control-lora-openposeXL2-rank256.safetensors
+RUN wget -O models/embeddings/pony_female_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_female_neg.safetensors
+RUN wget -O models/embeddings/pony_hq_v1_neg.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v1_neg.pt
+RUN wget -O models/embeddings/pony_hq_v1_pos.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v1_pos.pt
+RUN wget -O models/embeddings/pony_hq_v2_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v2_neg.safetensors
+RUN wget -O models/embeddings/pony_hq_v2_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v2_pos.safetensors
   
 # Stage 3: Final image
 FROM base as final
