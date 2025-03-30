@@ -76,6 +76,24 @@ RUN wget -O models/embeddings/pony_hq_v1_neg.pt https://huggingface.co/bizgonoma
 RUN wget -O models/embeddings/pony_hq_v1_pos.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v1_pos.pt
 RUN wget -O models/embeddings/pony_hq_v2_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v2_neg.safetensors
 RUN wget -O models/embeddings/pony_hq_v2_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v2_pos.safetensors
+RUN wget -O models/embeddings/pony_photo_real_neg.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_photo_real_neg.pt
+RUN wget -O models/embeddings/pony_photo_real_pos.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_photo_real_pos.pt
+RUN wget -O models/embeddings/pony_real_piano_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_real_piano_neg.safetensors
+RUN wget -O models/embeddings/pony_xxx_rate_neg.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_xxx_rate_neg.pt
+RUN wget -O models/embeddings/pony_xxx_rate_pos.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_xxx_rate_pos.pt
+RUN wget -O models/embeddings/vxl_analogfilm_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_analogfilm_pos.safetensors
+RUN wget -O models/embeddings/vxl_bad_x_neg.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_bad_x_neg.pt
+RUN wget -O models/embeddings/vxl_cinematic_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_cinematic_pos.safetensors
+RUN wget -O models/embeddings/vxl_deepng_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_deepng_neg.safetensors
+RUN wget -O models/embeddings/vxl_dtplus_hair_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_dtplus_hair_pos.safetensors
+RUN wget -O models/embeddings/vxl_dtplus_overall_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_dtplus_overall_pos.safetensors
+RUN wget -O models/embeddings/vxl_dtplus_skin_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_dtplus_skin_pos.safetensors
+RUN wget -O models/embeddings/vxl_endless_up_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_endless_up_neg.safetensors
+RUN wget -O models/embeddings/vxl_fix_blur_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_fix_blur_neg.safetensors
+RUN wget -O models/embeddings/vxl_general_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_general_neg.safetensors
+RUN wget -O models/embeddings/vxl_negative_ti_alb_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_negative_ti_alb_neg.safetensors
+RUN wget -O models/embeddings/vxl_realism_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_realism_neg.safetensors
+RUN wget -O models/embeddings/vxl_realism_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_realism_pos.safetensors
   
 # Stage 3: Final image
 FROM base as final
