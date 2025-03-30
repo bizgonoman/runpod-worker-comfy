@@ -64,7 +64,7 @@ ARG MODEL_TYPE
 WORKDIR /comfyui
 
 # Create necessary directories
-RUN mkdir -p models/checkpoints models/vae models/controlnet models/embeddings
+RUN mkdir -p models/checkpoints models/vae models/controlnet models/embeddings models/grounding-dino models/ipadapter models/clip_vision models/sam2 models/vae_approx
 
 # Download checkpoints/vae/LoRA to include in image based on model type
 RUN wget -O models/checkpoints/off2onsPDXLRealistic_1a1.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/checkpoint/off2onsPDXLRealistic_1a1.safetensors
@@ -94,6 +94,21 @@ RUN wget -O models/embeddings/vxl_general_neg.safetensors https://huggingface.co
 RUN wget -O models/embeddings/vxl_negative_ti_alb_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_negative_ti_alb_neg.safetensors
 RUN wget -O models/embeddings/vxl_realism_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_realism_neg.safetensors
 RUN wget -O models/embeddings/vxl_realism_pos.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/vxl_realism_pos.safetensors
+RUN wget -O models/grounding-dino/GroundingDINO_SwinB.cfg.py https://huggingface.co/bizgonoman/kmd-model/resolve/main/grounding-dino/GroundingDINO_SwinB.cfg.py
+RUN wget -O models/grounding-dino/GroundingDINO_SwinT_OGC.cfg.py https://huggingface.co/bizgonoman/kmd-model/resolve/main/grounding-dino/GroundingDINO_SwinT_OGC.cfg.py
+RUN wget -O models/grounding-dino/groundingdino_swinb_cogcoor.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/grounding-dino/groundingdino_swinb_cogcoor.pth
+RUN wget -O models/grounding-dino/groundingdino_swint_ogc.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/grounding-dino/groundingdino_swint_ogc.pth
+RUN wget -O models/ipadapter/groundingdino_swint_ogc.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/ipadapter/ip-adapter-faceid-plusv2_sdxl.bin
+RUN wget -O models/ipadapter/groundingdino_swint_ogc.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/ipadapter/ip-adapter-faceid_sdxl.bin
+RUN wget -O models/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors.safetensors
+RUN wget -O models/sam2/sam2.1_hiera_base_plus.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2.1_hiera_base_plus.pt
+RUN wget -O models/sam2/sam2.1_hiera_large.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2.1_hiera_large.pt
+RUN wget -O models/sam2/sam2.1_hiera_small.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2.1_hiera_small.pt
+RUN wget -O models/sam2/sam2.1_hiera_tiny.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2.1_hiera_tiny.pt
+RUN wget -O models/sam2/sam2_hiera_base_plus.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2_hiera_base_plus.pt
+RUN wget -O models/sam2/sam2_hiera_large.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2_hiera_large.pt
+RUN wget -O models/vae_approx/taef1_decoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_decoder.pth
+RUN wget -O models/vae_approx/taef1_encoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_encoder.pth
   
 # Stage 3: Final image
 FROM base as final
