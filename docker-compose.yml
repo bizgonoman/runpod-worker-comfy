@@ -16,3 +16,4 @@ services:
     volumes:
       - ./data/comfyui/output:/comfyui/output
       - ./data/runpod-volume:/runpod-volume
+      - ./data/comfyui/comfyui-manager/custom-node-list.json:/comfyui/custom_nodes/ComfyUI-Manager/custom-node-list.json
