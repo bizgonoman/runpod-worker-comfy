@@ -5,16 +5,28 @@
       "hash": "b6a8e6ba8147080a320b1b91c93a0b1cbdb93136",
       "disabled": false
     },
-    "https://github.com/ltdrdata/ComfyUI-Impact-Pack": {
-      "hash": "24de5a846bb9b1c1830af0218f76266c375cc904",
-      "disabled": false
-    },
     "https://github.com/ltdrdata/ComfyUI-Inspire-Pack": {
       "hash": "3bcc1d43a033b3d4b3066c34c9fba2a952b54ad0",
       "disabled": false
     },
     "https://github.com/evanspearman/ComfyMath": {
       "hash": "c01177221c31b8e5fbc062778fc8254aeb541638",
+      "disabled": false
+    },
+    "https://github.com/Jonseed/ComfyUI-Detail-Daemon": {
+      "hash": "f391accbda2d309cdcbec65cb9fcc80a41197b20",
+      "disabled": false
+    },
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack": {
+      "hash": "0b1ac0f1c5a395e17065821e4fd47aba3bf23900",
+      "disabled": false
+    },
+    "https://github.com/kijai/ComfyUI-KJNodes": {
+      "hash": "18a5565b5c309e39e4643a72ed9fb3c22e8f6014",
+      "disabled": false
+    },
+    "https://github.com/neverbiasu/ComfyUI-SAM2": {
+      "hash": "e6d435bd7820c80e45fd7b5ba5038e7bf1d64f6e",
       "disabled": false
     }
   },
