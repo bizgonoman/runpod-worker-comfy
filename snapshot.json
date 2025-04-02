@@ -28,6 +28,70 @@
     "https://github.com/neverbiasu/ComfyUI-SAM2": {
       "hash": "e6d435bd7820c80e45fd7b5ba5038e7bf1d64f6e",
       "disabled": false
+    },
+    "https://github.com/JohanK66/ComfyUI-WebhookImage": {
+      "hash": "8e5e282ed589f53b665b879dffa77849aed0d974",
+      "disabled": false
+    },
+    "https://github.com/tsogzark/ComfyUI-load-image-from-url": {
+      "hash": "66e4c91ffa13ea86be149c0f1a11ad6479bcf0cf",
+      "disabled": false
+    },
+    "https://github.com/cubiq/ComfyUI_IPAdapter_plus": {
+      "hash": "9d076a3df0d2763cef5510ec5ab807f6632c39f5",
+      "disabled": false
+    },
+    "https://github.com/JPS-GER/ComfyUI_JPS-Nodes" : {
+      "hash": "0e2a9aca02b17dde91577bfe4b65861df622dcaf",
+      "disabled": false
+    },
+    "https://github.com/JPS-GER/ComfyUI_JPS-Nodes" : {
+      "hash": "0e2a9aca02b17dde91577bfe4b65861df622dcaf",
+      "disabled": false
+    },
+    "https://github.com/chflame163/ComfyUI_LayerStyle_Advance" : {
+      "hash": "89aadaa6c0b8c9adfab86f5d0196f1d13383d47c",
+      "disabled": false
+    },
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscal" : {
+      "hash": "778a475dde8116a2066fe07f6c9ca15554e0b5be",
+      "disabled": false
+    },
+    "https://github.com/Ttl/ComfyUi_NNLatentUpscale" : {
+      "hash": "08105da31dbd7a54569661e135835e73bd8064b0",
+      "disabled": false
+    },
+    "https://github.com/shadowcz007/comfyui-mixlab-nodes" : {
+      "hash": "b2bb1876def6330fccf1e03cc69d2166cae7bedb",
+      "disabled": false
+    },
+    "https://github.com/Fannovel16/comfyui_controlnet_aux" : {
+      "hash": "83463c2e4b04e729268e57f638b4212e0da4badc",
+      "disabled": false
+    },
+    "https://github.com/storyicon/comfyui_segment_anything" : {
+      "hash": "ab6395596399d5048639cdab7e44ec9fae857a93",
+      "disabled": false
+    },
+    "https://github.com/jags111/efficiency-nodes-comfyui" : {
+      "hash": "5b915fd426e68a8119ad4157175bab18f2808cab",
+      "disabled": false
+    },
+    "https://github.com/jitcoder/lora-info" : {
+      "hash": "5db14b8f37e65585d6114416feb8f7b110541548",
+      "disabled": false
+    },
+    "https://github.com/jitcoder/lora-info" : {
+      "hash": "5db14b8f37e65585d6114416feb8f7b110541548",
+      "disabled": false
+    },
+    "https://github.com/rgthree/rgthree-comfy" : {
+      "hash": "f044a9dbb3fc9de55c6244d616d386986add3072",
+      "disabled": false
+    },
+    "https://github.com/WASasquatch/was-node-suite-comfyui" : {
+      "hash": "1014f8a1477b8ae0144e16ed4fd6476cd109fb23",
+      "disabled": false
     }
   },
   "file_custom_nodes": [
