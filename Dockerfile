@@ -32,7 +32,7 @@ RUN pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstu
 RUN pip install comfy-cli
 
 # Install ComfyUI
-RUN /usr/bin/yes | comfy --workspace /comfyui install --cuda-version 11.8 --nvidia --version 0.3.26
+RUN /usr/bin/yes | comfy --workspace /comfyui install --cuda-version 11.8 --nvidia --version 0.3.27
 
 # Change working directory to ComfyUI
 WORKDIR /comfyui
