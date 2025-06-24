@@ -31,6 +31,7 @@ RUN pip install opencv-python
 RUN pip install onnxruntime-gpu --extra-index-url https://aiinfra.pkgs.visualstudio.com/PublicPackages/_packaging/onnxruntime-cuda-12/pypi/simple/
 RUN pip install comfy-cli
 
+
 # Install ComfyUI
 RUN /usr/bin/yes | comfy --workspace /comfyui install --cuda-version 11.8 --nvidia --version 0.3.27
 
@@ -77,6 +78,12 @@ RUN wget -O models/checkpoints/pony-another-pony-realistic.safetensors https://h
 RUN wget -O models/vae/sdxlVAE_sdxlVAE.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae/sdxlVAE_sdxlVAE.safetensors
 RUN wget -O models/vae/sdxlNaturalSkintone_fp32.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae/sdxlNaturalSkintone_fp32.safetensors
 RUN wget -O models/controlnet/control-lora-openposeXL2-rank256.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/controlnet/control-lora-openposeXL2-rank256.safetensors
+RUN wget -O models/loras/ill-add-detail.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/loras/ill-add-detail.safetensors
+RUN wget -O models/loras/vxl-sculpture-slider.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/loras/vxl-sculpture-slider.safetensors
+RUN wget -O models/loras/pony-real-skin-slider.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/loras/pony-real-skin-slider.safetensors
+RUN wget -O models/loras/ill-age-slider.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/loras/ill-age-slider.safetensors
+RUN wget -O models/loras/vxl-age-slider.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/loras/vxl-age-slider.safetensors
+RUN wget -O models/loras/vxl-faces-portrait-1000-girl-.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/loras/vxl-faces-portrait-1000-girl-.safetensors
 RUN wget -O models/embeddings/pony_female_neg.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_female_neg.safetensors
 RUN wget -O models/embeddings/pony_hq_v1_neg.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v1_neg.pt
 RUN wget -O models/embeddings/pony_hq_v1_pos.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/embeddings/pony_hq_v1_pos.pt
