@@ -122,6 +122,7 @@ RUN wget -O models/sam2/sam2_hiera_base_plus.pt https://huggingface.co/bizgonoma
 RUN wget -O models/sam2/sam2_hiera_large.pt https://huggingface.co/bizgonoman/kmd-model/resolve/main/sam2/sam2_hiera_large.pt
 RUN wget -O models/vae_approx/taef1_decoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_decoder.pth
 RUN wget -O models/vae_approx/taef1_encoder.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae_approx/taef1_encoder.pth
+RUN wget -O models/upscale_models/4x-UltraSharp.pth https://huggingface.co/bizgonoman/kmd-model/resolve/main/upscale_models/4x-UltraSharp.pth
 
 
 
