@@ -73,8 +73,8 @@ WORKDIR /comfyui
 RUN mkdir -p models/checkpoints models/vae models/controlnet models/embeddings models/grounding-dino models/ipadapter models/clip_vision models/sam2 models/vae_approx
 
 # Download checkpoints/vae/LoRA to include in image based on model type
-RUN wget -O models/checkpoints/off2onsPDXLRealistic_1a1.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/checkpoint/off2onsPDXLRealistic_1a1.safetensors
-RUN wget -O models/checkpoints/pony-another-pony-realistic.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/checkpoint/pony-another-pony-realistic.safetensors
+RUN wget -O models/checkpoints/divingIllustriousReal_v20VAE.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/checkpoint/divingIllustriousReal_v20VAE.safetensors
+RUN wget -O models/checkpoints/talesOfDigitalDesireSFW_v21.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/checkpoint/talesOfDigitalDesireSFW_v21.safetensors
 RUN wget -O models/vae/sdxlVAE_sdxlVAE.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae/sdxlVAE_sdxlVAE.safetensors
 RUN wget -O models/vae/sdxlNaturalSkintone_fp32.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/vae/sdxlNaturalSkintone_fp32.safetensors
 RUN wget -O models/controlnet/control-lora-openposeXL2-rank256.safetensors https://huggingface.co/bizgonoman/kmd-model/resolve/main/controlnet/control-lora-openposeXL2-rank256.safetensors
