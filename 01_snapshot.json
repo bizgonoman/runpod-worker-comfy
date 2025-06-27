@@ -1,8 +1,8 @@
 {
     "comfyui": "464aece92b86c93694390a1b385b3c505190d0cd",
     "git_custom_nodes": {
-        "https://github.com/JohanK66/ComfyUI-WebhookImage": {
-            "hash": "8e5e282ed589f53b665b879dffa77849aed0d974",
+        "https://github.com/bizgonoman/ComfyUI-WebhookImage.git": {
+            "hash": "48c3378a3654a426c28bd166749fec27eb1de82c",
             "disabled": false
         },
         "https://github.com/picturesonpictures/comfy_PoP": {
